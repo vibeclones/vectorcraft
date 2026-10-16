@@ -6,4 +6,4 @@ Hosted copies of the browser (WebAssembly) builds of [vectorcraft](https://githu
 - Specific version: `/vectorcraft/v<version>/`
 - Version list: `/vectorcraft/versions.json`
 
-Each version folder is the unmodified contents of upstream's `vectorcraft-web-<version>.zip` release asset, including its license files. Upstream license: . A scheduled workflow mirrors new releases.
+Each version folder is the unmodified contents of upstream's `vectorcraft-web-<version>.zip` release asset, including its license files. Upstream license: Apache-2.0. A scheduled workflow mirrors new releases.
