@@ -9,10 +9,17 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="theme-color" content="#262626">
   <title>VectorCraft</title>
+  <!-- Tab and home-screen icons: copied from assets/app-icon (one folder per size, the PNG names are equal). -->
+  
+  
+  
+  <link rel="icon" type="image/svg+xml" href="icons/ai.storyteller.vectorcraft.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/32/ai.storyteller.vectorcraft.png">
+  <link rel="apple-touch-icon" href="icons/256/ai.storyteller.vectorcraft.png">
   
 <script type="module">
-import init, * as bindings from './vectorcraft-web-cf1e3406afe8fa74.js';
-const wasm = await init({ module_or_path: './vectorcraft-web-cf1e3406afe8fa74_bg.wasm' });
+import init, * as bindings from './vectorcraft-web-aaa19135505d0f43.js';
+const wasm = await init({ module_or_path: './vectorcraft-web-aaa19135505d0f43_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -35,7 +42,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
     #vectorcraft_loading { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
       color: #b8b8b8; font: 14px system-ui, sans-serif; pointer-events: none; }
   </style>
-<link rel="modulepreload" href="./vectorcraft-web-cf1e3406afe8fa74.js" crossorigin="anonymous" integrity="sha384-vl8rAXaVnLJEZW857jnV5EqQrS4w8+1e8DGzmTNgwCRmOQc5lqFk6hibnmZFaWOy"><link rel="preload" href="./vectorcraft-web-cf1e3406afe8fa74_bg.wasm" crossorigin="anonymous" integrity="sha384-4O+eEgG+r+zuOYeMSVDtQ6SFktG7jBW+j6/nyJkGZJdNeH0nkQrnL9jcagmhtKaQ" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="./vectorcraft-web-aaa19135505d0f43.js" crossorigin="anonymous" integrity="sha384-gmJVjraleQMYVjOEhJjQqIbFPhH+iMSdUQbh7xzwKx2Fe1yoxdQr+kCGat6b5qCS"><link rel="modulepreload" href="./snippets/eframe-d31a8450ea12dfc1/inline0.js" crossorigin="anonymous" integrity="sha384-uPZQ72BwgZ4v7Km6+UIFbkDDlt7ShGEsAVEHVN/+wZSGFhItJZB83iKMFQXauTSs"><link rel="preload" href="./vectorcraft-web-aaa19135505d0f43_bg.wasm" crossorigin="anonymous" integrity="sha384-KtkpaYz08b57tq92sDNMztWnBnpz4OTq3SNhF6wjukUKN7zuSpT4qmuul6finZxY" as="fetch" type="application/wasm"></head>
 <body>
   <canvas id="vectorcraft_canvas"></canvas>
   <div id="vectorcraft_loading">Loading VectorCraft&hellip;</div>
